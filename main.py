@@ -49,12 +49,12 @@ for name in names:
     driver.execute_script("arguments[0].setAttribute('selected', '')", option)
     
     form = driver.find_element(By.ID, "id_submitbutton").click()
-    time.sleep(3)
+    time.sleep(1)
 
     # Парсинг 'urk_scheduleblock'
     schedule_blocks = driver.find_elements(By.CLASS_NAME, 'urk_sheduleblock')
     schedule_raw = [block.text for block in schedule_blocks]
-    time.sleep(2)
+    time.sleep(1)
 
     # Высер больного ебан... Форматируем ячейки
     schedule_formatted = []

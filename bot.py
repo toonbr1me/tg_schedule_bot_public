@@ -94,7 +94,7 @@ def callback_inline(call):
                 schedule_without_date = '\n'.join(day[1].split('\n')[1:])
                 bot.send_message(call.message.chat.id, day[0] + '\n' + schedule_without_date)
             conn.close()
-            bot.send_message(call.message.chat.id, "[Поддержи мой проект!](https://pay.cloudtips.ru/p/04e90a41)", parse_mode='MarkdownV2', disable_web_page_preview=True)
+            bot.send_message(call.message.chat.id, "[Поддержи мой проект](https://pay.cloudtips.ru/p/04e90a41)", parse_mode='MarkdownV2', disable_web_page_preview=True)
         elif call.data.startswith("group_218_"):
             group = "218"
             date = call.data.split("_")[2]
@@ -107,5 +107,5 @@ def callback_inline(call):
                 schedule_without_date = '\n'.join(day[1].split('\n')[1:])
                 bot.send_message(call.message.chat.id, day[0] + '\n' + schedule_without_date)
             conn.close()
-            bot.send_message(call.message.chat.id, "[Поддержи мой проект!](https://pay.cloudtips.ru/p/04e90a41)", parse_mode='MarkdownV2', disable_web_page_preview=True)
+            bot.send_message(call.message.chat.id, "[Поддержи мой проект](https://pay.cloudtips.ru/p/04e90a41)", parse_mode='MarkdownV2', disable_web_page_preview=True)
 bot.infinity_polling()
