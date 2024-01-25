@@ -110,3 +110,4 @@ def callback_inline(call):
             conn.close()
             bot.send_message(call.message.chat.id, "[Поддержи мой проект](https://pay.cloudtips.ru/p/04e90a41)", parse_mode='MarkdownV2', disable_web_page_preview=True)
 bot.infinity_polling()
+# Шляпа какая-то, но работает, и это главное
