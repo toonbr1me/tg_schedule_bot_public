@@ -55,6 +55,7 @@ def handle_text(message):
         keyboard.add(button1)
         keyboard.add(button2)
         bot.send_message(message.chat.id, "Выбери группу:", reply_markup=keyboard)
+        bot.send_message(message.chat.id, "[Присоеденяйся к группе, знай о обновлениях!](https://t.me/t1brime)", parse_mode='MarkdownV2', disable_web_page_preview=True)
 @bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
     if call.message:
